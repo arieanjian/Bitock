@@ -35,13 +35,22 @@ function Sidebar({ open, onClose }) {
         <div className="flex-1 overflow-y-auto">
           <div className="space-y-2">
             <div className="text-sm text-gray-400 px-2">今天</div>
-            <button className="w-full text-left px-2 py-1 rounded hover:bg-gray-800 text-sm text-gray-300">
-              關於 React 的討論
+            <button
+              className="w-full text-left px-2 py-1 rounded hover:bg-gray-800 text-sm text-gray-300"
+              onClick={() => alert("不給你看！")}
+            >
+              海灘辣妹寫真集
             </button>
-            <button className="w-full text-left px-2 py-1 rounded hover:bg-gray-800 text-sm text-gray-300">
-              Tailwind CSS 使用技巧
+            <button
+              className="w-full text-left px-2 py-1 rounded hover:bg-gray-800 text-sm text-gray-300"
+              onClick={() => alert("尚未開放此功能ㄛ！")}
+            >
+              Bitock 葵花寶典
             </button>
-            <button className="w-full text-left px-2 py-1 rounded hover:bg-gray-800 text-sm text-gray-300">
+            <button
+              className="w-full text-left px-2 py-1 rounded hover:bg-gray-800 text-sm text-gray-300"
+              onClick={() => alert("尚未開放此功能ㄛ！")}
+            >
               台股討論
             </button>
           </div>
