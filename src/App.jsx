@@ -75,7 +75,8 @@ function App() {
         <div className="flex-1 flex flex-col overflow-hidden">
           <div
             ref={messagesRef}
-            className="main bg-red-100 relative w-full xl:w-[70vw] h-[calc(100vh-180px)] py-2 overflow-y-auto mx-auto px-2 flex gap-2 flex-col"
+            // className="main bg-red-100 relative w-full xl:w-[70vw] h-[calc(100vh-180px)] py-2 overflow-y-auto mx-auto px-2 flex gap-2 flex-col"
+            className="main bg-red-100 relative w-full xl:w-[70vw] h-[80vh] py-2 overflow-y-auto mx-auto px-2 flex gap-2 flex-col"
           >
             {messages.map((message, index) => (
               <ChatMessage key={index} message={message} />
