@@ -66,7 +66,7 @@ function App() {
   }, [messages]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 overflow-hidden">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Header setSidebarOpen={setSidebarOpen} />
       {/* Sidebar */}
       <section className="flex-1 flex overflow-hidden">
@@ -82,7 +82,9 @@ function App() {
             ))}
             <DraggableButton />
           </div>
-          <InputArea onSendMessage={handleSendMessage} />
+          <div className="flex-shrink-0">
+            <InputArea onSendMessage={handleSendMessage} />
+          </div>
         </div>
       </section>
     </div>

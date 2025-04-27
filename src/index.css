@@ -26,11 +26,26 @@ body {
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   position: fixed;
   width: 100%;
   height: 100%;
+}
+
+/* 修復 Safari 移動版的視口高度問題 */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+
+  #root {
+    height: -webkit-fill-available;
+  }
+
+  body {
+    height: -webkit-fill-available;
+  }
 }
 
 /* 自定義滾動條樣式 */
